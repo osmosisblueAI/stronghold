@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote | Stronghold Deconstruction</title>
+    <meta name="description" content="Request a free quote for demolition, cleanup, and haul-off services in Northeast Ohio. Fast, reliable service from Stronghold Deconstruction.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">STRONGHOLD</span>
+                <span class="logo-subtext">DECONSTRUCTION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="quote.html" class="btn btn-primary active">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container text-white text-center">
+            <h1 class="display-4 fw-bold">Request a Free Quote</h1>
+            <p class="lead">Tell us about your project, and we'll provide a detailed estimate within 24 hours</p>
+        </div>
+    </header>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="quote-form-container p-4 p-md-5 bg-white shadow rounded">
+                        <h2 class="text-center mb-4">Project Quote Request</h2>
+                        <p class="text-center mb-5">Fill out the form below with details about your demolition project. The more information you provide, the more accurate our quote will be.</p>
+                        
+                        <form id="quote-request-form">
+                            <!-- Personal Information -->
+                            <div class="mb-4">
+                                <h4 class="form-section-title">Contact Information</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name*</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address*</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number*</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="best-time" class="form-label">Best Time to Contact</label>
+                                        <select class="form-select" id="best-time">
+                                            <option selected>Choose a time</option>
+                                            <option value="morning">Morning (8AM-12PM)</option>
+                                            <option value="afternoon">Afternoon (12PM-5PM)</option>
+                                            <option value="evening">Evening (5PM-8PM)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project Location -->
+                            <div class="mb-4">
+                                <h4 class="form-section-title">Project Location</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="address" class="form-label">Street Address*</label>
+                                        <input type="text" class="form-control" id="address" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="city" class="form-label">City*</label>
+                                        <input type="text" class="form-control" id="city" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="zip" class="form-label">ZIP Code*</label>
+                                        <input type="text" class="form-control" id="zip" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Property Type*</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="property-type" id="residential" value="residential" checked>
+                                            <label class="form-check-label" for="residential">Residential</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project Details -->
+                            <div class="mb-4">
+                                <h4 class="form-section-title">Project Details</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="service-type" class="form-label">Service Type*</label>
+                                        <select class="form-select" id="service-type" required>
+                                            <option selected disabled value="">Select a service</option>
+                                            <option value="partial-demolition">Partial Demolition</option>
+                                            <option value="interior-demolition">Interior Demolition</option>
+                                            <option value="garage-demolition">Garage/Shed Demolition</option>
+                                            <option value="cleanup-only">Cleanup & Haul-Off Only</option>
+                                            <option value="other">Other (Specify Below)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="project-size" class="form-label">Project Size (approx. sq. ft.)</label>
+                                        <input type="number" class="form-control" id="project-size">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="timeline" class="form-label">Preferred Timeline</label>
+                                        <select class="form-select" id="timeline">
+                                            <option selected disabled value="">Select timeline</option>
+                                            <option value="asap">As Soon As Possible</option>
+                                            <option value="1-2-weeks">1-2 Weeks</option>
+                                            <option value="2-4-weeks">2-4 Weeks</option>
+                                            <option value="1-2-months">1-2 Months</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="budget" class="form-label">Budget Range (optional)</label>
+                                        <select class="form-select" id="budget">
+                                            <option selected disabled value="">Select budget range</option>
+                                            <option value="under-5k">Under $5,000</option>
+                                            <option value="5k-10k">$5,000 - $10,000</option>
+                                            <option value="10k-20k">$10,000 - $20,000</option>
+                                            <option value="20k-50k">$20,000 - $50,000</option>
+                                            <option value="over-50k">Over $50,000</option>
+                                            <option value="not-sure">Not Sure</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="project-description" class="form-label">Project Description*</label>
+                                    <textarea class="form-control" id="project-description" rows="5" placeholder="Please provide details about your project, including any specific requirements or challenges." required></textarea>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional Information -->
+                            <div class="mb-4">
+                                <h4 class="form-section-title">Additional Information</h4>
+                                <div class="mb-3">
+                                    <label class="form-label">Do you have any of the following? (Check all that apply)</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="permits">
+                                        <label class="form-check-label" for="permits">Demolition Permits</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="blueprints">
+                                        <label class="form-check-label" for="blueprints">Building Blueprints/Plans</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="utilities">
+                                        <label class="form-check-label" for="utilities">Utilities Disconnected</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="asbestos">
+                                        <label class="form-check-label" for="asbestos">Asbestos/Hazardous Materials Inspection</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="hear-about" class="form-label">How did you hear about us?</label>
+                                    <select class="form-select" id="hear-about">
+                                        <option selected disabled value="">Select an option</option>
+                                        <option value="google">Google Search</option>
+                                        <option value="referral">Referral from Friend/Family</option>
+                                        <option value="social">Social Media</option>
+                                        <option value="previous">Previous Customer</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Terms and Submit -->
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="terms.html">Terms and Conditions</a> and consent to being contacted about my quote request.*
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Submit Quote Request</button>
+                                <p class="mt-3 text-muted small">* Required fields</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-quote py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Why Request a Quote From Us</h2>
+                <p class="section-subtitle">Experience the Stronghold difference</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="icon-box mx-auto mb-4">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h4>Detailed Estimates</h4>
+                        <p>We provide comprehensive, transparent quotes with no hidden fees or unexpected charges.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="icon-box mx-auto mb-4">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Fast Response</h4>
+                        <p>Receive your detailed quote within 24 hours of submitting your request.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="icon-box mx-auto mb-4">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>No Obligation</h4>
+                        <p>Our quotes are completely free with no pressure or obligation to proceed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Mini Section -->
+    <section class="faq-mini py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="quoteAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How soon can I expect to receive my quote?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#quoteAccordion">
+                                <div class="accordion-body">
+                                    We typically provide quotes within 24 hours of receiving your request. For more complex projects, we may need to schedule a site visit to provide an accurate estimate.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Is there a fee for requesting a quote?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#quoteAccordion">
+                                <div class="accordion-body">
+                                    No, all of our quotes are completely free with no obligation to proceed with the project. We believe in transparent pricing and want you to feel confident in your decision.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What information do I need to provide for an accurate quote?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#quoteAccordion">
+                                <div class="accordion-body">
+                                    The more details you can provide about your project, the more accurate our quote will be. Important information includes the type of structure, approximate size, specific demolition needs, timeline, and any potential challenges (such as hazardous materials or access issues).
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Do I need to have permits before requesting a quote?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#quoteAccordion">
+                                <div class="accordion-body">
+                                    No, you don't need to have permits before requesting a quote. In fact, we can help guide you through the permitting process or even handle it for you, depending on the project scope and requirements.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <a href="faq.html" class="btn btn-secondary">View All FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Stronghold Deconstruction</h4>
+                    <p>Professional demolition, cleanup, and haul-off services throughout Northeast Ohio. Committed to safety, efficiency, and customer satisfaction.</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html#residential">Residential Demolition</a></li>
+                        <li><a href="services.html#interior">Interior Demolition</a></li>
+                        <li><a href="services.html#cleanup">Cleanup & Haul-Off</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 2704 Mayfield Rd #k3, Cleveland, OH 44106</li>
+                        <li><i class="fas fa-phone me-2"></i> (216) 407-5014</li>
+                        <li><i class="fas fa-envelope me-2"></i> luke@strongholddeconstruction.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 7AM-6PM, Sat: 8AM-2PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Stronghold Deconstruction. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy.html" class="me-3">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
