@@ -44,35 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Quote Form Handler (for quote.html)
-    const quoteForm = document.getElementById('quote-request-form');
-    if (quoteForm) {
-        quoteForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simple validation
-            let isValid = true;
-            const formElements = quoteForm.elements;
-            
-            for (let i = 0; i < formElements.length; i++) {
-                if (formElements[i].type !== 'submit' && formElements[i].required && !formElements[i].value.trim()) {
-                    isValid = false;
-                    formElements[i].classList.add('is-invalid');
-                } else if (formElements[i].type !== 'submit') {
-                    formElements[i].classList.remove('is-invalid');
-                }
-            }
-            
-            if (isValid) {
-                // Replace form with success message
-                const successMessage = document.createElement('div');
-                successMessage.className = 'alert alert-success mt-4';
-                successMessage.innerHTML = '<h4>Thank you for your quote request!</h4><p>One of our representatives will contact you within 24 hours to discuss your project needs.</p>';
-                
-                quoteForm.innerHTML = '';
-                quoteForm.appendChild(successMessage);
-            }
-        });
-    }
+    // This code is no longer needed as we're using the HubSpot embedded form
+    // The form data will be processed by HubSpot directly
     
     // Project Filter (for projects.html)
     const filterButtons = document.querySelectorAll('.project-filter button');
