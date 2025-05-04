@@ -14,13 +14,33 @@
         .hubspot-form-container {
             width: 100%;
             margin: 0 auto;
-            overflow: hidden;
+            padding: 0;
         }
         
-        @media (max-width: 768px) {
-            .hubspot-form-container iframe {
-                height: 1200px; /* Taller on mobile devices */
-            }
+        /* HubSpot form styling overrides */
+        .hs-form .hs-form-field {
+            margin-bottom: 20px;
+        }
+        
+        .hs-form .hs-button {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+            padding: 10px 30px;
+            font-weight: 600;
+        }
+        
+        .hs-form .hs-button:hover {
+            background-color: var(--bs-primary-dark, #0056b3);
+        }
+        
+        .hs-form label {
+            font-weight: 500;
+        }
+        
+        .hs-form input, .hs-form select, .hs-form textarea {
+            border-radius: 4px;
+            padding: 10px;
+            border: 1px solid #ced4da;
         }
     </style>
 </head>
@@ -78,17 +98,16 @@
                         <h2 class="text-center mb-4">Project Quote Request</h2>
                         <p class="text-center mb-5">Fill out the form below with details about your demolition project. The more information you provide, the more accurate our quote will be.</p>
                         
-                        <!-- HubSpot Form (Direct Embed) -->
+                        <!-- HubSpot Form -->
                         <div class="hubspot-form-container">
-                            <iframe 
-                                src="https://share-na2.hsforms.com/19TcTKHJAR9mrhlyalvl_aQ40hkwn"
-                                width="100%" 
-                                height="800" 
-                                frameborder="0" 
-                                marginheight="0" 
-                                marginwidth="0" 
-                                style="border: none;">
-                            </iframe>
+                            <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                              hbspt.forms.create({
+                                portalId: "242684951",
+                                formId: "f5371328-7240-47d9-ab86-5c9a96f97f69",
+                                region: "na2"
+                              });
+                            </script>
                         </div>
                     </div>
                 </div>
