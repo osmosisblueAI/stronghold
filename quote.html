@@ -8,6 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Custom styles for HubSpot form -->
+    <style>
+        .hubspot-form-container {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .hubspot-form-container iframe {
+                height: 1200px; /* Taller on mobile devices */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -63,15 +78,18 @@
                         <h2 class="text-center mb-4">Project Quote Request</h2>
                         <p class="text-center mb-5">Fill out the form below with details about your demolition project. The more information you provide, the more accurate our quote will be.</p>
                         
-                        <!-- HubSpot Form -->
-                        <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na2",
-                            portalId: "242684951",
-                            formId: "19TcTKHJAR9mrhlyalvl_aQ40hkwn"
-                          });
-                        </script>
+                        <!-- HubSpot Form (Direct Embed) -->
+                        <div class="hubspot-form-container">
+                            <iframe 
+                                src="https://share-na2.hsforms.com/19TcTKHJAR9mrhlyalvl_aQ40hkwn"
+                                width="100%" 
+                                height="800" 
+                                frameborder="0" 
+                                marginheight="0" 
+                                marginwidth="0" 
+                                style="border: none;">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
