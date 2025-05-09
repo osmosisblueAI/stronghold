@@ -1,0 +1,39 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# If the requested file or directory doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Handle blog post URLs: /blog/post-name -> /blog/post-name.html
+RewriteRule ^blog/([^/]+)$ blog/$1.html [L]
+
+# Handle blog post URLs: /post-name -> /post-name.html
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Set default index files
+DirectoryIndex index.html index.php
+
+# Prevent directory listing
+Options -Indexes
+
+# Set content type for SVG
+AddType image/svg+xml .svg .svgz
+
+# Set Cache-Control headers for better performance
+<FilesMatch ".(css|js|jpg|jpeg|png|gif|svg|ico)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+<FilesMatch ".(html|htm)$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+</FilesMatch>
+
+# Prevent direct access to include files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Return 404 for non-existing original .html URLs
+ErrorDocument 404 /404.html 

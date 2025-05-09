@@ -20,5 +20,13 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/deck", "destination": "/blog/deck.html" },
+    { "source": "/garage", "destination": "/blog/garage.html" },
+    { "source": "/process", "destination": "/blog/process.html" },
+    { "source": "/blog/deck", "destination": "/blog/deck.html" },
+    { "source": "/blog/garage", "destination": "/blog/garage.html" },
+    { "source": "/blog/process", "destination": "/blog/process.html" }
   ]
 }

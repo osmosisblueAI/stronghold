@@ -7,3 +7,39 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
+
+[[redirects]]
+  from = "/deck"
+  to = "/blog/deck.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/garage"
+  to = "/blog/garage.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/process"
+  to = "/blog/process.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/blog/deck"
+  to = "/blog/deck.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/blog/garage"
+  to = "/blog/garage.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/blog/process"
+  to = "/blog/process.html"
+  status = 200
+  force = true
