@@ -269,7 +269,7 @@
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Blog</a>
+                        <a class="nav-link active" href="./index.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../faq.html">FAQ</a>
@@ -325,7 +325,7 @@
                                         <i class="far fa-folder ms-3 me-2"></i> Demolition Guides
                                     </p>
                                     <p class="card-text">Learn everything you need to know about the demolition process, from initial planning to final cleanup. This comprehensive guide covers permits, safety considerations, and what to expect during your demolition project.</p>
-                                    <a href="process.html" class="btn btn-primary">
+                                    <a href="./process.html" class="btn btn-primary">
                                         Read More
                                     </a>
                                 </div>
@@ -364,7 +364,7 @@
                             <p class="card-text blog-excerpt">Learn everything you need to know about the demolition process, from initial planning to final cleanup.</p>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="process.html" class="btn btn-link p-0">
+                            <a href="./process.html" class="btn btn-link p-0">
                                 Read More <i class="fas fa-arrow-right ms-1"></i>
                             </a>
                         </div>
@@ -386,7 +386,7 @@
                             <p class="card-text blog-excerpt">Learn about the factors that influence deck removal costs in Northeast Ohio, including size, materials, and additional services.</p>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="deck.html" class="btn btn-link p-0">
+                            <a href="./deck.html" class="btn btn-link p-0">
                                 Read More <i class="fas fa-arrow-right ms-1"></i>
                             </a>
                         </div>
@@ -408,7 +408,7 @@
                             <p class="card-text blog-excerpt">Get a detailed breakdown of garage demolition costs in Northeast Ohio, including factors that affect pricing.</p>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <a href="garage.html" class="btn btn-link p-0">
+                            <a href="./garage.html" class="btn btn-link p-0">
                                 Read More <i class="fas fa-arrow-right ms-1"></i>
                             </a>
                         </div>
@@ -477,7 +477,7 @@
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../services.html">Services</a></li>
                         <li><a href="../about.html">About Us</a></li>
-                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="./index.html">Blog</a></li>
                         <li><a href="../faq.html">FAQ</a></li>
                         <li><a href="../contact.html">Contact</a></li>
                     </ul>
@@ -630,6 +630,18 @@
             // Load time tracking for optimization
             const pageLoadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
             console.log('Page load time:', pageLoadTime, 'ms');
+            
+            // Add this console log to check if paths are correct
+            console.log('Blog index page loaded successfully');
+            
+            // Let's debug the paths to blog posts
+            document.querySelectorAll('a[href]').forEach(function(link) {
+                if (link.href.includes('process.html') || 
+                    link.href.includes('deck.html') || 
+                    link.href.includes('garage.html')) {
+                    console.log('Blog post link: ' + link.href);
+                }
+            });
         });
     </script>
     
