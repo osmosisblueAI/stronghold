@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=deck.html">
+    <title>Redirecting...</title>
+    <script>
+        window.location.href = "deck.html";
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a href="deck.html">link to the blog post</a>.</p>
+</body>
+</html> 
