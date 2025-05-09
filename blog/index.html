@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Stronghold Deconstruction</title>
+    <meta name="description" content="Read our latest articles about demolition, construction, and property development in Northeast Ohio.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Blog specific styles -->
+    <style>
+        .blog-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .blog-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .blog-excerpt {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .blog-category {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="logo-text">STRONGHOLD</span>
+                <span class="logo-subtext">DECONSTRUCTION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="../quote.html" class="btn btn-primary">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container text-white text-center">
+            <h1 class="display-4 fw-bold">Our Blog</h1>
+            <p class="lead">Insights, tips, and news about demolition and construction in Northeast Ohio</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="blog-section py-5">
+        <div class="container">
+            <!-- Featured Post -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../images/blog/featured-post.jpg" class="img-fluid rounded-start h-100" alt="Featured Blog Post">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <span class="badge bg-primary mb-2">Featured</span>
+                                    <h2 class="card-title h3">Understanding the Demolition Process: A Complete Guide</h2>
+                                    <p class="blog-meta mb-3">
+                                        <i class="far fa-calendar-alt me-2"></i> May 8, 2025
+                                        <i class="far fa-user ms-3 me-2"></i> Luke Stronghold
+                                        <i class="far fa-folder ms-3 me-2"></i> Demolition Guides
+                                    </p>
+                                    <p class="card-text">Learn everything you need to know about the demolition process, from initial planning to final cleanup. This comprehensive guide covers permits, safety considerations, and what to expect during your demolition project.</p>
+                                    <a href="understanding-demolition-process.html" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Categories -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <a href="#" class="btn btn-sm btn-outline-secondary m-1 active">All Posts</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary m-1">Demolition Guides</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary m-1">Safety Tips</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary m-1">Project Showcases</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary m-1">Industry News</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/blog/post-1.jpg" class="card-img-top" alt="Blog Post Image">
+                            <span class="blog-category">Safety Tips</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Essential Safety Equipment for Demolition Projects</h3>
+                            <p class="blog-meta mb-2">
+                                <i class="far fa-calendar-alt me-1"></i> May 5, 2025
+                            </p>
+                            <p class="card-text blog-excerpt">Discover the essential safety equipment needed for demolition projects to ensure the well-being of workers and compliance with safety regulations.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="essential-safety-equipment.html" class="btn btn-link p-0">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/blog/post-2.jpg" class="card-img-top" alt="Blog Post Image">
+                            <span class="blog-category">Project Showcase</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Residential Demolition: Before and After</h3>
+                            <p class="blog-meta mb-2">
+                                <i class="far fa-calendar-alt me-1"></i> May 2, 2025
+                            </p>
+                            <p class="card-text blog-excerpt">See the transformation of a residential property from start to finish, including the challenges faced and solutions implemented during the demolition process.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="residential-demolition-before-after.html" class="btn btn-link p-0">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/blog/post-3.jpg" class="card-img-top" alt="Blog Post Image">
+                            <span class="blog-category">Industry News</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">New Demolition Technologies Changing the Industry</h3>
+                            <p class="blog-meta mb-2">
+                                <i class="far fa-calendar-alt me-1"></i> April 28, 2025
+                            </p>
+                            <p class="card-text blog-excerpt">Explore the latest technologies revolutionizing the demolition industry, from advanced machinery to sustainable demolition methods.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="new-demolition-technologies.html" class="btn btn-link p-0">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/blog/post-4.jpg" class="card-img-top" alt="Blog Post Image">
+                            <span class="blog-category">Demolition Guides</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">How to Choose the Right Demolition Contractor</h3>
+                            <p class="blog-meta mb-2">
+                                <i class="far fa-calendar-alt me-1"></i> April 25, 2025
+                            </p>
+                            <p class="card-text blog-excerpt">Learn the key factors to consider when selecting a demolition contractor for your project, including experience, licensing, and insurance.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="choose-right-demolition-contractor.html" class="btn btn-link p-0">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/blog/post-5.jpg" class="card-img-top" alt="Blog Post Image">
+                            <span class="blog-category">Safety Tips</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Asbestos Removal: What You Need to Know</h3>
+                            <p class="blog-meta mb-2">
+                                <i class="far fa-calendar-alt me-1"></i> April 22, 2025
+                            </p>
+                            <p class="card-text blog-excerpt">Understanding the risks of asbestos and the proper procedures for its removal during demolition projects to ensure safety and compliance.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="asbestos-removal-guide.html" class="btn btn-link p-0">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/blog/post-6.jpg" class="card-img-top" alt="Blog Post Image">
+                            <span class="blog-category">Industry News</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Sustainable Demolition Practices for a Greener Future</h3>
+                            <p class="blog-meta mb-2">
+                                <i class="far fa-calendar-alt me-1"></i> April 18, 2025
+                            </p>
+                            <p class="card-text blog-excerpt">Discover how the demolition industry is embracing sustainable practices to reduce environmental impact and promote recycling of materials.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="sustainable-demolition-practices.html" class="btn btn-link p-0">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <nav aria-label="Blog pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Subscribe to Our Blog</h2>
+                    <p class="section-subtitle mb-4">Get the latest demolition tips, industry news, and project updates delivered to your inbox.</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                        <div class="form-text">We respect your privacy. Unsubscribe at any time.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Stronghold Deconstruction</h4>
+                    <p>Professional demolition, cleanup, and haul-off services throughout Northeast Ohio. Committed to safety, efficiency, and customer satisfaction.</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../services.html#residential">Residential Demolition</a></li>
+                        <li><a href="../services.html#interior">Interior Demolition</a></li>
+                        <li><a href="../services.html#cleanup">Cleanup & Haul-Off</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 2704 Mayfield Rd #k3, Cleveland, OH 44106</li>
+                        <li><i class="fas fa-phone me-2"></i> (216) 407-5014</li>
+                        <li><i class="fas fa-envelope me-2"></i> luke@strongholddeconstruction.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 7AM-6PM, Sat: 8AM-2PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Stronghold Deconstruction. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../privacy.html" class="me-3">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/242684951.js"></script>
+    <!-- End of HubSpot Embed Code -->
+</body>
+</html> 
